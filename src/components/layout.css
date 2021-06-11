@@ -1,0 +1,38 @@
+ 
+.hs-container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.left-col{
+    background: #fff;
+    border-radius: 10px;
+    max-width: 25%;
+    padding: 20px 20px 40px;
+    text-align: left;
+    width: 100%; 
+}
+.right-col{
+    max-width: 75%;
+    width: 100%; 
+}
+@media(max-width:1024px){ 
+    .left-col { 
+        max-width: 40%; 
+    }
+    .right-col{
+        max-width: 60%; 
+    }
+}
+@media(max-width:700px){ 
+    .left-col { 
+        margin-bottom: 40px; 
+        max-width: 100%; 
+    }
+    .right-col{
+        margin-bottom: 40px; 
+        max-width: 100%; 
+    }
+}
